@@ -3,7 +3,7 @@ body {
   flex-direction: column;
 }
 
-div {
+.car-div {
   box-sizing: border-box;
   width: 325px;
   height: 441px;
@@ -38,6 +38,7 @@ button {
   border: none;
   margin-top: 1.5rem;
 }
+
 #sedan {
   background-color: hsl(31, 77%, 52%);
   border-top-left-radius: 0.3rem;
@@ -53,6 +54,7 @@ button {
 #btn-suvs {
   color: hsl(184, 100%, 22%);
 }
+
 #luxury {
   background-color: hsl(179, 100%, 13%);
   border-bottom-left-radius: 0.3rem;
@@ -61,6 +63,10 @@ button {
 #btn-luxury {
   color: hsl(179, 100%, 13%);
 }
+
+footer {
+  margin-top: 2rem;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -68,7 +74,23 @@ button {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+/*changes for hover effect*/
+#btn-sedan:hover, #btn-suvs:hover, #btn-luxury:hover {
+  color: white;
+  border: solid 2px white;
+}
+#btn-sedan:hover {
+  background-color: hsl(31, 77%, 52%);
+}
+#btn-suvs:hover {
+  background-color: hsl(184, 100%, 22%);
+}
+#btn-luxury:hover {
+  background-color: hsl(179, 100%, 13%);
+}
 
+
+/*changes for bigger screen*/
 @media (min-width: 1330px) {
   main {
     display: flex;
@@ -81,9 +103,11 @@ button {
     border-bottom-left-radius: 0;
     border-top-right-radius: 0.3rem;
   }
-  div {
-    width: 275px;
-    height: 450px;
-    padding: 42px;
+  .car-div {
+    width: 300px;
+    height: 500px;
+  }
+  button {
+    margin-top: 5rem;
   }
 }
