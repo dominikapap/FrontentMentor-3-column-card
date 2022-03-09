@@ -25,15 +25,13 @@ Users should be able to:
 This is a basic view for a desktop version:
 ![](/screenshots/desktopBasic.PNG)
 
-This is a mobile version with hover effect on buttons:
+This is a mobile version with cards in one column and hover effect on buttons:
 ![](/screenshots/mobileHover.PNG)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
-## My process
+- Solution URL: [GitHub repository](https://github.com/dominikapap/threeColumnCardPreview)
+- Live Site URL: [Netlify app](https://three-column-card-preview.netlify.app/)
 
 ### Built with
 
