@@ -1,7 +1,4 @@
-body {
-  display: flex;
-  flex-direction: column;
-}
+
 
 .car-div {
   box-sizing: border-box;
@@ -64,16 +61,8 @@ button {
   color: hsl(179, 100%, 13%);
 }
 
-footer {
-  margin-top: 2rem;
-}
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
+
+
 /*changes for hover effect*/
 #btn-sedan:hover, #btn-suvs:hover, #btn-luxury:hover {
   color: white;
