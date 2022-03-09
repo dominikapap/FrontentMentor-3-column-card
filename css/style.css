@@ -1,5 +1,9 @@
-
-
+body{
+    background-color:  hsl(0, 0%, 95%);
+}
+main{
+    margin-top: 2rem;
+}
 .car-div {
   box-sizing: border-box;
   width: 325px;
