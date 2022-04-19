@@ -4,12 +4,22 @@ $darker-cyan: hsl(179, 100%, 13%);
 $transparent-white: hsla(0, 0%, 100%, 0.75);
 $light-gray: hsl(0, 0%, 95%);
 
+@mixin for-desktop {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
 
 body {
   background-color: $light-gray;
 }
 main {
   margin-top: 3rem;
+
+  @include for-desktop {
+    display: flex;
+    margin-top: 42px;
+  }
 }
 .car-div {
   color: $transparent-white;
@@ -17,9 +27,16 @@ main {
   width: 327px;
   height: 442px;
   padding: 48px 49px;
+
+  @include for-desktop {
+    width: 307px;
+    height: 500px;
+    padding: 48px 47.5px;
+  }
+
   h1 {
     font-size: 2.5rem;
-    color:$light-gray;
+    color: $light-gray;
     text-transform: uppercase;
     font-family: "Big Shoulders Display", cursive;
     font-weight: 700;
@@ -31,7 +48,6 @@ main {
     line-height: 25px;
     font-size: 15px;
     margin-top: 25px;
-    
   }
 }
 
@@ -46,15 +62,26 @@ button {
     weight: 400;
     size: 15px;
   }
+  @include for-desktop {
+    margin-top: 83px;
+    padding-top: 11px;
+    padding-bottom: 12px;
+  }
 }
 
 #sedan {
   background-color: $bright-orange;
   border-top-left-radius: 0.3rem;
   border-top-right-radius: 0.3rem;
+
+  @include for-desktop {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 8px;
+  }
 }
 #btn-sedan {
   color: $bright-orange;
+
   &:hover {
     background-color: $bright-orange;
   }
@@ -65,6 +92,7 @@ button {
 }
 #btn-suvs {
   color: $dark-cyan;
+  
   &:hover {
     background-color: $dark-cyan;
   }
@@ -74,6 +102,11 @@ button {
   background-color: $darker-cyan;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+
+  @include for-desktop {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 8px;
+  }
 }
 #btn-luxury {
   color: $darker-cyan;
@@ -88,30 +121,4 @@ button {
 #btn-luxury:hover {
   color: $transparent-white;
   border: solid 2px $transparent-white;
-}
-
-/*changes for bigger screen*/
-@media (min-width: 1330px) {
-  main {
-    display: flex;
-    margin-top: 42px;
-  }
-  .car-div {
-    width: 307px;
-    height: 500px;
-    padding: 48px 47.5px;
-  }
-  button {
-    margin-top: 83px;
-    padding-top: 11px;
-    padding-bottom: 12px;
-  }
-  #sedan {
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 8px;
-  }
-  #luxury {
-    border-bottom-left-radius: 0;
-    border-top-right-radius: 8px;
-  }
 }
