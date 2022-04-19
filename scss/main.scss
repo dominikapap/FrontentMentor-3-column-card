@@ -1,0 +1,120 @@
+@use 'colors';
+
+@mixin for-desktop {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+body {
+  background-color: colors.$light-gray;
+}
+main {
+  margin-top: 3rem;
+
+  @include for-desktop {
+    display: flex;
+    margin-top: 42px;
+  }
+}
+.car-div {
+  color: colors.$transparent-white;
+  box-sizing: border-box;
+  width: 327px;
+  height: 442px;
+  padding: 48px 49px;
+
+  @include for-desktop {
+    width: 307px;
+    height: 500px;
+    padding: 48px 47.5px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: colors.$light-gray;
+    text-transform: uppercase;
+    font-family: "Big Shoulders Display", cursive;
+    font-weight: 700;
+    line-height: 48px;
+    margin-top: 32px;
+  }
+  p {
+    font-family: "Lexend Deca", sans-serif;
+    line-height: 25px;
+    font-size: 15px;
+    margin-top: 25px;
+  }
+}
+
+button {
+  border-radius: 1.5rem;
+  border: none;
+  padding: 11.5px 31.5px;
+  margin-top: 25px;
+  line-height: 25px;
+  font: {
+    family: "Lexend Deca", sans-serif;
+    weight: 400;
+    size: 15px;
+  }
+  @include for-desktop {
+    margin-top: 83px;
+    padding-top: 11px;
+    padding-bottom: 12px;
+  }
+}
+
+#sedan {
+  background-color: colors.$bright-orange;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+
+  @include for-desktop {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 8px;
+  }
+}
+#btn-sedan {
+  color: colors.$bright-orange;
+
+  &:hover {
+    background-color: colors.$bright-orange;
+  }
+}
+
+#suvs {
+  background-color: colors.$dark-cyan;
+}
+#btn-suvs {
+  color: colors.$dark-cyan;
+  
+  &:hover {
+    background-color: colors.$dark-cyan;
+  }
+}
+
+#luxury {
+  background-color: colors.$darker-cyan;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+
+  @include for-desktop {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 8px;
+  }
+}
+#btn-luxury {
+  color: colors.$darker-cyan;
+  &:hover {
+    background-color: colors.$darker-cyan;
+  }
+}
+
+/*changes for hover effect*/
+#btn-sedan:hover,
+#btn-suvs:hover,
+#btn-luxury:hover {
+  color: colors.$transparent-white;
+  border: solid 2px colors.$transparent-white;
+}
