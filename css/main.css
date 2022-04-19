@@ -17,6 +17,7 @@ main {
 
 .car-div h1 {
   font-size: 2.5rem;
+  color: #f2f2f2;
   text-transform: uppercase;
   font-family: "Big Shoulders Display", cursive;
   font-weight: 700;
@@ -96,7 +97,7 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 0;
+    margin-top: 42px;
   }
   .car-div {
     width: 307px;
