@@ -28,6 +28,9 @@ This is a basic view for a desktop version:
 This is a mobile version with cards in one column and hover effect on buttons:
 ![](/screenshots/mobileHover.PNG)
 
+Design comparison with my solution:
+![](/screenshots/designComparison.png)
+
 ### Links
 
 - Solution URL: [GitHub repository](https://github.com/dominikapap/threeColumnCardPreview)
