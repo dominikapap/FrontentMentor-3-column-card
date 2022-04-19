@@ -1,4 +1,4 @@
-@use 'colors';
+@use 'colors' as *;
 
 @mixin for-desktop {
   @media (min-width: 1200px) {
@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: colors.$light-gray;
+  background-color: $light-gray;
 }
 main {
   margin-top: 3rem;
@@ -18,7 +18,7 @@ main {
   }
 }
 .car-div {
-  color: colors.$transparent-white;
+  color: $transparent-white;
   box-sizing: border-box;
   width: 327px;
   height: 442px;
@@ -32,7 +32,7 @@ main {
 
   h1 {
     font-size: 2.5rem;
-    color: colors.$light-gray;
+    color: $light-gray;
     text-transform: uppercase;
     font-family: "Big Shoulders Display", cursive;
     font-weight: 700;
@@ -66,7 +66,7 @@ button {
 }
 
 #sedan {
-  background-color: colors.$bright-orange;
+  background-color: $bright-orange;
   border-top-left-radius: 0.3rem;
   border-top-right-radius: 0.3rem;
 
@@ -76,26 +76,26 @@ button {
   }
 }
 #btn-sedan {
-  color: colors.$bright-orange;
+  color: $bright-orange;
 
   &:hover {
-    background-color: colors.$bright-orange;
+    background-color: $bright-orange;
   }
 }
 
 #suvs {
-  background-color: colors.$dark-cyan;
+  background-color: $dark-cyan;
 }
 #btn-suvs {
-  color: colors.$dark-cyan;
+  color: $dark-cyan;
   
   &:hover {
-    background-color: colors.$dark-cyan;
+    background-color: $dark-cyan;
   }
 }
 
 #luxury {
-  background-color: colors.$darker-cyan;
+  background-color: $darker-cyan;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 
@@ -105,9 +105,9 @@ button {
   }
 }
 #btn-luxury {
-  color: colors.$darker-cyan;
+  color: $darker-cyan;
   &:hover {
-    background-color: colors.$darker-cyan;
+    background-color: $darker-cyan;
   }
 }
 
@@ -115,6 +115,6 @@ button {
 #btn-sedan:hover,
 #btn-suvs:hover,
 #btn-luxury:hover {
-  color: colors.$transparent-white;
-  border: solid 2px colors.$transparent-white;
+  color: $transparent-white;
+  border: solid 2px $transparent-white;
 }

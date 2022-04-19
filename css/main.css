@@ -1,29 +1,24 @@
 body {
-  background-color: #f2f2f2;
+  background-color: hsl(0deg, 0%, 95%);
 }
 
 main {
   margin-top: 3rem;
 }
-
 @media (min-width: 1200px) {
   main {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin-top: 42px;
   }
 }
 
 .car-div {
-  color: rgba(255, 255, 255, 0.75);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  color: hsla(0deg, 0%, 100%, 0.75);
+  box-sizing: border-box;
   width: 327px;
   height: 442px;
   padding: 48px 49px;
 }
-
 @media (min-width: 1200px) {
   .car-div {
     width: 307px;
@@ -31,17 +26,15 @@ main {
     padding: 48px 47.5px;
   }
 }
-
 .car-div h1 {
   font-size: 2.5rem;
-  color: #f2f2f2;
+  color: hsl(0deg, 0%, 95%);
   text-transform: uppercase;
   font-family: "Big Shoulders Display", cursive;
   font-weight: 700;
   line-height: 48px;
   margin-top: 32px;
 }
-
 .car-div p {
   font-family: "Lexend Deca", sans-serif;
   line-height: 25px;
@@ -59,7 +52,6 @@ button {
   font-weight: 400;
   font-size: 15px;
 }
-
 @media (min-width: 1200px) {
   button {
     margin-top: 83px;
@@ -69,11 +61,10 @@ button {
 }
 
 #sedan {
-  background-color: #e38826;
+  background-color: hsl(31deg, 77%, 52%);
   border-top-left-radius: 0.3rem;
   border-top-right-radius: 0.3rem;
 }
-
 @media (min-width: 1200px) {
   #sedan {
     border-top-right-radius: 0;
@@ -82,31 +73,28 @@ button {
 }
 
 #btn-sedan {
-  color: #e38826;
+  color: hsl(31deg, 77%, 52%);
 }
-
 #btn-sedan:hover {
-  background-color: #e38826;
+  background-color: hsl(31deg, 77%, 52%);
 }
 
 #suvs {
-  background-color: #006970;
+  background-color: hsl(184deg, 100%, 22%);
 }
 
 #btn-suvs {
-  color: #006970;
+  color: hsl(184deg, 100%, 22%);
 }
-
 #btn-suvs:hover {
-  background-color: #006970;
+  background-color: hsl(184deg, 100%, 22%);
 }
 
 #luxury {
-  background-color: #004241;
+  background-color: hsl(179deg, 100%, 13%);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
-
 @media (min-width: 1200px) {
   #luxury {
     border-bottom-left-radius: 0;
@@ -115,18 +103,16 @@ button {
 }
 
 #btn-luxury {
-  color: #004241;
+  color: hsl(179deg, 100%, 13%);
 }
-
 #btn-luxury:hover {
-  background-color: #004241;
+  background-color: hsl(179deg, 100%, 13%);
 }
 
 /*changes for hover effect*/
 #btn-sedan:hover,
 #btn-suvs:hover,
 #btn-luxury:hover {
-  color: rgba(255, 255, 255, 0.75);
-  border: solid 2px rgba(255, 255, 255, 0.75);
-}
-/*# sourceMappingURL=main.css.map */
+  color: hsla(0deg, 0%, 100%, 0.75);
+  border: solid 2px hsla(0deg, 0%, 100%, 0.75);
+}/*# sourceMappingURL=main.css.map */
